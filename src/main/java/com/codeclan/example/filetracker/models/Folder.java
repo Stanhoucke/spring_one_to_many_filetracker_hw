@@ -18,8 +18,8 @@ public class Folder {
     @Column(name = "title")
     private String title;
 
-    @JsonIgnoreProperties({"file"})
-    @OneToMany(mappedBy = "file")
+    @JsonIgnoreProperties({"folder"})
+    @OneToMany(mappedBy = "folder")
     private List<File> files;
 
     @ManyToOne

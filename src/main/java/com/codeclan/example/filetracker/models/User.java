@@ -15,7 +15,7 @@ public class User {
     @Column(name = "id")
     private Long id;
 
-    @Column(name = "id")
+    @Column(name = "name")
     private String name;
 
     @JsonIgnoreProperties({"user"})
